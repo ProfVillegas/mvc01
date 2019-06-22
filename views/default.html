@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <?=(App::getRouter()->getController());?>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="<?=WEBROOT.DS;?>css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="<?=WEBROOT.DS;?>css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="<?=WEBROOT.DS;?>css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+
+        <ul class="nav peach-gradient lighten-3 py-4 mb-4 font-weight-bold z-depth-1">
+            <li class="nav-item">
+                <a class="nav-link <?=(App::getRouter()->getController()=='pages')?'active':'';?> white-text" href="<?=WEBROOT.DS?>Pages"><?=__('lng.lbpages', 'Unknow')?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?=(App::getRouter()->getController()=='register')?'active':'';?> white-text" href="<?=WEBROOT.DS?>Register"><?=__('lng.lbregister', 'Unknow')?></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?=(App::getRouter()->getController()=='parque')?'active':'';?> white-text" href="<?=WEBROOT.DS?>Parque"><?=__('lng.lblist', 'default value')?></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link white-tex dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            
+        </ul>
+
+
+    </div>
+    <div><br></div>
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-2"><?=__('lng.lbbien', 'Unknow')?></h1>
+
+            <h5 class="animated fadeIn mb-1"><?=__('lng.lbpar', 'Unknow')?></h5>
+
+            <p class="animated fadeIn text-muted">
+                <?=$data['content']?>
+            </p>
+        </div>
+        <a class="animated fadeIn mb-4"href="<?=WEBROOT.DS?>"><?=__('lng.lbreg', 'Unknow')?></a>
+        <br>
+    </div>
+    <!-- /Start your project here-->
+
+
+ <p></p>
+    <h3>FOOTER WILL BE HERE</h3>
+    <!-- JQuery -->
+    <script type="text/javascript" src="<?=WEBROOT.DS;?>js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="<?=WEBROOT.DS;?>js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="<?=WEBROOT.DS;?>js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="<?=WEBROOT.DS;?>js/mdb.min.js"></script>
+</body>
+
+</html>
