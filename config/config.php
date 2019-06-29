@@ -20,4 +20,4 @@ Config::set('default_action', 'index');
 Config::set('db.host','localhost');
 Config::set('db.usuario','root');
 Config::set('db.psw','');
-Config::set('db.dbnombre','mvcus')
+Config::set('db.dbnombre','mvcus');
