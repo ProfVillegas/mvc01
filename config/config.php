@@ -14,3 +14,10 @@ Config::set('default_route', 'default');
 Config::set('default_language', 'en');
 Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');
+
+//Variables para la conexión a la BD
+
+Config::set('db.host','localhost');
+Config::set('db.usuario','root');
+Config::set('db.psw','');
+Config::set('db.dbnombre','mvcus')

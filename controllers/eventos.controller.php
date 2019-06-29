@@ -1,6 +1,6 @@
 <?php
 
-class PagesController extends Controller{
+class EventosController extends Controller{
 
     public function index(){
         $this->data['test_content'] = 'Aquí estará mi contenido';
